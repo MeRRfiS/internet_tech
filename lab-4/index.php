@@ -41,13 +41,15 @@
       </tr>
     </thead>
     <tbody>
-      <?php foreach ($csvData as $row): ?>
-        <tr>
-          <?php foreach ($row as $value): ?>
-            <td><?php echo htmlspecialchars($value); ?></td>
-          <?php endforeach; ?>
-        </tr>
-      <?php endforeach; ?>
+    <?php
+      foreach ($csvData as $row):
+        echo "<tr>";
+          foreach ($row as $value):
+            echo "<td>".htmlspecialchars($value)."</td>";
+          endforeach;
+        echo "</tr>";
+      endforeach;
+      ?>
     </tbody>
   </table>
 

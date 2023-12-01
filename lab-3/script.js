@@ -3,7 +3,7 @@ let intervalId;
 function startGeneration() {
     const interval = document.getElementById('interval').value;
     if (!interval) {
-        alert('Будь ласка, введіть інтервал');
+        alert('Please enter the interval');
         return;
     }
 
